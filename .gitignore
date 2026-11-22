@@ -1,0 +1,28 @@
+# Secrets: real credentials live only on the server
+public_html/includes/config.local.php
+.env
+*.env
+
+# Runtime data
+public_html/data/*
+!public_html/data/index.php
+!public_html/data/.htaccess
+*.sqlite
+*.sqlite3
+*.sql
+*.sql.gz
+*.log
+
+# Uploaded media from the admin portal (starter seed-* set is kept)
+public_html/uploads/gallery/*
+!public_html/uploads/gallery/index.php
+!public_html/uploads/gallery/seed-*
+!public_html/uploads/gallery/seedv-*
+
+# Backups and OS/editor files
+*.bak
+*.zip
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
